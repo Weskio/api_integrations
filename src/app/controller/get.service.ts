@@ -12,34 +12,34 @@ export class GetService {
 
   Product :Product [] = []
 
-  public getProducts(){
-    return this.http.get('https://freeapi.gerasim.in/api/Interview/GetAllLanguage')
-    // .pipe(map((res)=>{
-    //   for(const key in res){
-    //     if(key === 'data'){
-    //     this.Product.push(...res[key])
-    //     }
-    //   }
-    //   return this.Product
-    // }))
-    // .subscribe((data) => {
-    //   this.Product = data
-    // })
+  // public getProducts(){
+  //   return this.http.get('https://freeapi.gerasim.in/api/Interview/GetAllLanguage')
+  //   // .pipe(map((res)=>{
+  //   //   for(const key in res){
+  //   //     if(key === 'data'){
+  //   //     this.Product.push(...res[key])
+  //   //     }
+  //   //   }
+  //   //   return this.Product
+  //   // }))
+  //   // .subscribe((data) => {
+  //   //   this.Product = data
+  //   // })
 
-    .pipe(map((res)=>{
-      for(const key in res){
-        if(key === 'data'){
-          this.Product.push(...res[key])
-        }
-      }
-      return this.Product
-    })).subscribe((data) => {
-      this.Product = data
-    })
-  }
+  //   .pipe(map((res)=>{
+  //     for(const key in res){
+  //       if(key === 'data'){
+  //         this.Product.push(...res[key])
+  //       }
+  //     }
+  //     return this.Product
+  //   })).subscribe((data) => {
+  //     this.Product = data
+  //   })
+  // }
 
-  public getProduct$(){
-    return this.http.get('https://freeapi.gerasim.in/api/Interview/GetAllLanguage')
-  }
+  // public getProduct$(){
+  //   return this.http.get('https://freeapi.gerasim.in/api/Interview/GetAllLanguage')
+  // }
   
 }

@@ -16,12 +16,12 @@ export class AppComponent {
 
   constructor(public getService: GetService) { }
 
-  product: Product[] = [];
+  // product: Product[] = [];
 
-  ngOnInit() {
-    this.getService.getProducts();
-    //console.log(this.getService.Product)
-    let  product$ = of(this.getService.Product)
-    //return product$
-  }
+  // ngOnInit() {
+  //   this.getService.getProducts();
+  //   //console.log(this.getService.Product)
+  //   let  product$ = of(this.getService.Product)
+  //   //return product$
+  // }
 }
